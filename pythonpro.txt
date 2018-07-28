@@ -1,3 +1,27 @@
-Aish yaha se start karna hai...!!
-^_^
-heheheeh!!!1
+class Hostel:
+    def __init__(self):
+        self.hname=hname
+        self.facilities=facilities
+        self.avail=avail
+class Hostel1(Hostel):
+    def __init__(self):
+        Hostel.__init__(self,values to be passed)
+class Hostel2(Hostel):
+    def __init__(self):
+        Hostel.__init__(self,values to be passed)
+class Hostel3(Hostel):
+    def __init__(self):
+        Hostel.__init__(self,values to be passed)
+class Hostel4(Hostel):
+    def __init__(self):
+        Hostel.__init__(self,values to be passed)
+class Hostel5(Hostel):
+    def __init__(self):
+        Hostel.__init__(self,values to be passed)
+
+
+work in progress...
+    
+    
+    
+    
