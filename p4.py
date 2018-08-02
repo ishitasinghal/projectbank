@@ -1,6 +1,7 @@
+import sys
 def hostel():
     import hostel_details
-    print("HOSTELS IN DEHRADUN\n")
+    print("-------HOSTELS IN DEHRADUN-------\n")
     print("1. Vatika Girls Hostel")
     print("2. Vatika Boys Hostel")
     print("3. Aman Residency (Boys)")
@@ -9,7 +10,7 @@ def hostel():
     print("[Press 0 to exit]")
     n=6
     while(n!=0):
-        n=int(input("Enter your choice number:"))
+        n=int(input("Enter your choice number(hostel):"))
         if(n==1):
             hostel_details.vatika_girls()
         if(n==2):
@@ -17,12 +18,11 @@ def hostel():
         if(n==3):
             hostel_details.aman_residency()
         if(n==4):
-            hostel_details.sarthak()
+          hostel_details.sarthak()
         if(n==5):
             hostel_details.pride()
-        if(n!=1 and n!=2 and n!=3 and n!=4 and n!=5):
+        if(n!=0 and n!=1 and n!=2 and n!=3 and n!=4 and n!=5):
             print(">>>>Wrong choice, enter your choice again\n")
-    
-
-hostel()
+    if(n==0):
+        sys.exit()
             

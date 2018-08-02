@@ -1,4 +1,3 @@
-#import p4
 class H:
     def select(self,name,about,rooms,transport,price,facilities,book_now):
         self.name=name
@@ -8,7 +7,7 @@ class H:
         self.price=price
         self.facilities=facilities
         self.book_now=book_now
-        print("-------------------------------------------",self.name,"--------------------------------------")
+        print("-------------------------",self.name,"-------------------------------")
         print("1.About")
         print("2.Rooms")
         print("3.Transport")
@@ -17,9 +16,9 @@ class H:
         print("6.Book now")
         print("7.Student login")
         print("8.Staff login")
-        a=10   
+        a=10  
         while(a!=0):
-            a=int(input("Enter your choice number:"))
+            a=int(input("Enter your choice number(options):"))
             print("\n")
             if(a==1):
                 print(self.about)
@@ -33,9 +32,11 @@ class H:
                 print(self.price)
             if(a==6):
                 print(self.book_now)
-            if(a!=1 and a!=2 and a!=3 and a!=4 and a!=5 and a!=6):
+            if(a==0):
+                import p4
+                p4.hostel()
+            if(a!=0 and a!=1 and a!=2 and a!=3 and a!=4 and a!=5 and a!=6):
                 print("------Wrong choice, enter your choice again\n")
-       # p4.hostel()
     
         
 class v_g(H):

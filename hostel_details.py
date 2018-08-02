@@ -46,7 +46,6 @@ Vatika Girls Hostel
 Address: 111, Bidholi, Dehradun (UK) 248007
 Phone: 9927726767, 9117165633
 Email: vatikagirls@gmail.com'''
-    print("------>>>>")
     hostel_details2.obj1.select(name,about,rooms,transport,price,facilities,book_now)
 
 #vatika boys hostel
